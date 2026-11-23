@@ -1,0 +1,47 @@
+{
+  "titulo": "Semáforo bursátil académico de MSFT",
+  "fuente_historial": "Consultar datos/FUENTE_DATOS.md; muestra 2024 o CSV Yahoo descargado por el alumno",
+  "fecha_primera_train": "2024-01-09",
+  "fecha_ultima_train": "2024-09-03",
+  "fecha_primera_test": "2024-09-05",
+  "fecha_ultima_test": "2024-11-20",
+  "filas_train": 164,
+  "filas_test": 55,
+  "mejor_C": 1.0,
+  "f1_macro_cv": 0.4819951590794176,
+  "metricas_test_modelo": {
+    "exactitud": 0.5818181818181818,
+    "precision_clase_sube": 0.6333333333333333,
+    "recall_clase_sube": 0.6129032258064516,
+    "f1_clase_sube": 0.6229508196721312,
+    "f1_macro": 0.5767815322850451
+  },
+  "metricas_test_baseline": {
+    "exactitud": 0.5636363636363636,
+    "precision_clase_sube": 0.5636363636363636,
+    "recall_clase_sube": 1.0,
+    "f1_clase_sube": 0.7209302325581395,
+    "f1_macro": 0.36046511627906974
+  },
+  "matriz_confusion": [
+    [
+      13,
+      11
+    ],
+    [
+      12,
+      19
+    ]
+  ],
+  "tiempo_entrenamiento_segundos": 0.062,
+  "columnas_predictoras": [
+    "retorno_1d",
+    "retorno_5d",
+    "volatilidad_5d",
+    "volumen_relativo_5d"
+  ],
+  "python": "3.13.5",
+  "scikit_learn": "1.8.0",
+  "hash_dataset_variables_sha256": "e6afd5fce38f45760f0aaa139a54ee98dcca823929b14edc4cd1846706e6de31",
+  "nota": "Experimento educativo en series temporales. No predice con fiabilidad el mercado ni recomienda inversiones."
+}
